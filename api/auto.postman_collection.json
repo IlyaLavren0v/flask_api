@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "7386b9d1-cc6c-46fd-8348-54bf5e0fafdf",
+		"name": "auto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST /register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"Ilya Lavrenov\",\n    \"password\" : \"My password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /auth",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"Ilya Lavrenov\",\n    \"password\" : \"My password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/auth",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /auto/<string:mark>",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTEwMDQ3MTksImlhdCI6MTYxMTAwNDQxOSwibmJmIjoxNjExMDA0NDE5LCJpZGVudGl0eSI6MX0.0qrlGEnSElzIoupk-aGmCDcHESnLdgP9CfIMJdtxpsU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/auto/mark11",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"auto",
+						"mark11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /auto/<string:mark>",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTEwMDQ3MTksImlhdCI6MTYxMTAwNDQxOSwibmJmIjoxNjExMDA0NDE5LCJpZGVudGl0eSI6MX0.0qrlGEnSElzIoupk-aGmCDcHESnLdgP9CfIMJdtxpsU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"max_speed\" : 280,\n    \"distance\" : 400,\n    \"handler\" : \"Auto Motors\",\n    \"stock\" : \"Germany\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/auto/audi",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"auto",
+						"audi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT  /auto/<string:mark>",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTEwMDQ3MTksImlhdCI6MTYxMTAwNDQxOSwibmJmIjoxNjExMDA0NDE5LCJpZGVudGl0eSI6MX0.0qrlGEnSElzIoupk-aGmCDcHESnLdgP9CfIMJdtxpsU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"max_speed\" : 350,\n    \"distance\" : 300,\n    \"handler\" : \"Auto Motors\",\n    \"stock\" : \"Japan\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/auto/mark11",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"auto",
+						"mark11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE  /auto/<string:mark>",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTEwMDQ3MTksImlhdCI6MTYxMTAwNDQxOSwibmJmIjoxNjExMDA0NDE5LCJpZGVudGl0eSI6MX0.0qrlGEnSElzIoupk-aGmCDcHESnLdgP9CfIMJdtxpsU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/auto/mark11",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"auto",
+						"mark11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /stock",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTEwMDQyMzksImlhdCI6MTYxMTAwMzkzOSwibmJmIjoxNjExMDAzOTM5LCJpZGVudGl0eSI6Mn0.INTZKtFaJln5Wt4rClU3hJ-NKgjei9HdzJlyw02IDsY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/stock",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"stock"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
